@@ -13,19 +13,12 @@ body {
 
 #toggleSpell {
     display: block;
-    width: 150px; /* Example width */
-    height: 50px; /* Example height */
+    width: 150px;
+    height: 80px;
     margin: 20px auto;
     padding: 10px 20px;
     cursor: pointer;
 }
-
-
-body.cast-spell, body.cast-spell * {
-    filter: grayscale(100%);
-    }
-
-
 .skip-link {
     position: absolute;
     top: -40px;
@@ -63,7 +56,7 @@ body.cast-spell, body.cast-spell * {
 }
 
 .navigation li a.active {
-    background-color: #ff7043;
+    background-color: #c0431d;
     color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -100,13 +93,13 @@ body.cast-spell, body.cast-spell * {
     .grid-item:hover {
         transform: scale(1.03);
         transition: transform 0.3s ease-in-out;
-        border-color: #ff7043;
+        border-color: #c0431d;
     }
 
 
     .skip-link:focus-visible {
         top: 0;
-        background: #ff7043;
+        background: #c0431d;
     }
 
 
@@ -130,13 +123,22 @@ body.cast-spell, body.cast-spell * {
     }
 
     .flex-item:hover {
-        border-color: #ff7043;
+        border-color: #c0431d;
     }
     .navigation li a:hover,
     .navigation li a:active {
-        background: #ff7043;
+        background: #c0431d;
         color: #ffffff;
         border-bottom: 2px solid #e0f2f1;
+    }
+
+    #toggleSpell {
+        display: none;
+        width: 150px;
+        height: 80px;
+        margin: 20px auto;
+        padding: 10px 20px;
+        cursor: pointer;
     }
 }
 @media (min-width: 1025px) {
@@ -166,7 +168,21 @@ body.cast-spell, body.cast-spell * {
     }
 
 
+    #toggleSpell {
+        display: block;
+        width: 150px;
+        height: 80px;
+        margin: 20px auto;
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: #004d40;
+        color: #e0f2f1;
+    }
 
+
+    body.cast-spell, body.cast-spell * {
+        filter: grayscale(100%);
+        }
     header h1 {
         font-size: 2.5rem;
         text-align: center;
@@ -223,7 +239,7 @@ body.cast-spell, body.cast-spell * {
         width: 100%;
         height: 150px;
         background-image: repeating-linear-gradient(-45deg, #e0f7fa, #e0f7fa 10px, #b2dfdb 10px, #b2dfdb 20px); /* Creates a zigzag pattern */
-        background-size: 56px 56px; 
+        background-size: 56px 56px;
     }
 
     @keyframes gradient-animation {
