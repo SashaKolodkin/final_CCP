@@ -11,6 +11,20 @@ body {
     height: auto;
 }
 
+#toggleSpell {
+    display: block;
+    width: 150px; /* Example width */
+    height: 50px; /* Example height */
+    margin: 20px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+body.cast-spell, body.cast-spell * {
+    filter: grayscale(100%);
+    }
+
 
 .skip-link {
     position: absolute;
@@ -150,19 +164,9 @@ body {
     button:hover, .button:hover {
         background-color: #00796b;
     }
-    #toggleSpell {
-        display: block;
-        width: 150px; /* Example width */
-        height: 50px; /* Example height */
-        margin: 20px auto;
-        padding: 10px 20px;
-        cursor: pointer;
-    }
-    
 
-    body.cast-spell, body.cast-spell * {
-        filter: grayscale(100%);
-        }
+
+
     header h1 {
         font-size: 2.5rem;
         text-align: center;
